@@ -1,0 +1,19 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB02.
+      ********************************************
+      *AREA DE COMENTARIOS - REMARKS
+      *AUTHOR = Dayane(ALURA) Daya
+      *OBJETIVO : RECEBER E IMPRIMIR UMA STRING
+      *DATA = XX/XX/XXX
+      ********************************************
+      *PICTURE OU PIC EXISTEM APENAS TRES A(NOMES ALFABETICOS),X(ALFANUMERICO, NUMEROS,LETRAS E SIMBOLOS)
+      *9 (NUMERAÇÃO).
+
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-NOME PIC X(20) VALUE SPACES.
+       PROCEDURE DIVISION.
+       ACCEPT WRK-NOME FROM CONSOLE.
+        DISPLAY 'Nome..' WRK-NOME(1:10).
+        STOP RUN.
